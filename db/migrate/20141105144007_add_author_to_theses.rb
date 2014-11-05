@@ -1,5 +1,5 @@
 class AddAuthorToTheses < ActiveRecord::Migration
   def change
-    add_reference :theses, :author, index: true
+    add_index :theses, :author_id
   end
 end

@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20141105143401) do
+ActiveRecord::Schema.define(version: 20141105144007) do
 
   create_table "authors", force: true do |t|
     t.string   "firstname"
@@ -29,5 +29,7 @@ ActiveRecord::Schema.define(version: 20141105143401) do
     t.datetime "updated_at"
     t.integer  "author_id"
   end
+
+  add_index "theses", ["author_id"], name: "index_theses_on_author_id"
 
 end
