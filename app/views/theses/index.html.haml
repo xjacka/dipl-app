@@ -3,7 +3,7 @@
 %table
   %tr
     %th Name
-    %th Abstract
+    %th Faculty
     %th Language
     %th Defended
     %th
@@ -13,7 +13,7 @@
   - @theses.each do |thesis|
     %tr
       %td= thesis.name
-      %td= thesis.abstract
+      %td= thesis.faculty.name
       %td= thesis.language
       %td= thesis.defended
       %td= link_to 'Show', thesis
