@@ -18,5 +18,8 @@
   .field
     = f.label :defended
     = f.date_select :defended
+  .field
+    = f.label :faculty
+    = f.select :faculty, faculties
   .actions
     = f.submit 'Save'
