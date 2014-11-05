@@ -15,6 +15,7 @@ class ThesesController < ApplicationController
   # GET /theses/new
   def new
     @thesis = Thesis.new
+    @thesis.author = Author.new
   end
 
   # GET /theses/1/edit
