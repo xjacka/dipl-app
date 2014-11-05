@@ -1,6 +1,6 @@
 %h1 Listing theses
 
-%table
+%table.table.table-striped
   %tr
     %th Name
     %th Faculty
@@ -21,5 +21,4 @@
       %td= link_to 'Destroy', thesis, :method => :delete, :data => { :confirm => 'Are you sure?' }
 
 %br
-
-= link_to 'New Thesis', new_thesis_path
+= link_to 'New Thesis', new_thesis_path, class:'btn btn-primary'
