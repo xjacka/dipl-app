@@ -1,0 +1,25 @@
+%h1 Listing theses
+
+%table
+  %tr
+    %th Name
+    %th Abstract
+    %th Language
+    %th Defended
+    %th
+    %th
+    %th
+
+  - @theses.each do |thesis|
+    %tr
+      %td= thesis.name
+      %td= thesis.abstract
+      %td= thesis.language
+      %td= thesis.defended
+      %td= link_to 'Show', thesis
+      %td= link_to 'Edit', edit_thesis_path(thesis)
+      %td= link_to 'Destroy', thesis, :method => :delete, :data => { :confirm => 'Are you sure?' }
+
+%br
+
+= link_to 'New Thesis', new_thesis_path

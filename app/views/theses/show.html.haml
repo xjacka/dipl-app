@@ -1,0 +1,18 @@
+%p#notice= notice
+
+%p
+  %b Name:
+  = @thesis.name
+%p
+  %b Abstract:
+  = @thesis.abstract
+%p
+  %b Language:
+  = @thesis.language
+%p
+  %b Defended:
+  = @thesis.defended
+
+= link_to 'Edit', edit_thesis_path(@thesis)
+\|
+= link_to 'Back', theses_path
